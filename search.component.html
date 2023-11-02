@@ -1,0 +1,6 @@
+<div class="d-flex flex-wrap gap-3 mt-3       ">
+    <app-singleart *ngFor="let artwork of artworks" [artworkdata]="artwork"></app-singleart>
+</div>
+<!-- <mat-paginator [length]="1000" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]"
+  (page)="getdata($event.pageIndex, $event.pageSize)">
+</mat-paginator> -->
