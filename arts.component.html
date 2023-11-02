@@ -1,0 +1,23 @@
+<!-- <router-outlet></router-outlet> -->
+<div class="d-flex flex-column justify-content-center align-items-center gap-3">
+  <img src="https://www.chicagomag.com/wp-content/uploads/2021/04/Enrich_topper.png">
+  <p style="font-family:Verdana, Geneva, Tahoma, sans-serif">
+                                                                  The Art Institute of Chicago 
+    A world-renowned art museum located in Chicago, Illinois, USA. It was founded in 1879, has one of the largest art collections. 
+                                The museum's collection includes more than 300,000 works of art. 
+  </p>
+  <button style="background-color: #111111; color: #FFFFFF;">About Us</button>
+</div>
+<div class="d-flex flex-wrap gap-3 mt-3 ">
+    <app-singleart *ngFor="let artwork of artworks" [artworkdata]="artwork"></app-singleart>
+</div>
+<!-- <mat-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+</mat-paginator> -->
+<div>
+  <mat-paginator [length]="1000" [pageSize]="10" [pageSizeOptions]="[ 10, 25,50, 100]"
+    (page)="getdata($event.pageIndex, $event.pageSize)">
+  </mat-paginator>
+</div>
