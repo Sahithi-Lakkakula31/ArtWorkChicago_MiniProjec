@@ -1,0 +1,78 @@
+
+/* pre
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:large;
+} */
+p
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:1.2em;
+}
+h1
+{
+    font-size: 8vh;
+}
+img
+{
+    width:80%;
+    height:50%;
+}
+.sidebarheadings
+{
+    flex-direction: column;
+}
+@media only screen and (max-width: 768px) 
+{
+    /* Decrease font size for small screens */
+  
+    /* Adjust layout for small screens */
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+    .contentx
+    {
+        flex-shrink:1;
+    }
+    .contentside
+    {
+        flex-shrink:5;
+    }
+    h1
+    {
+        font-size: 5vh;
+    }
+    .sidebarheadings
+    {
+        flex-direction: row;
+    }
+    h2
+    {
+        font-size:1vh;
+    }
+  }
+
+
+.singleimg
+{
+    width:80%;
+    height:50%;
+}
+
+@media only screen and (max-width: 992px) 
+{
+    .sidebarheadings
+    {
+        flex-direction: row;
+    }
+
+    h1
+    {
+        font-size: 5vh;
+    }
+    h2
+    {
+        font-size:2vh;
+    }
+}
