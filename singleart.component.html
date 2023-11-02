@@ -1,0 +1,16 @@
+<div class="card" style="width: 18rem;">
+  <img src="https://www.artic.edu/iiif/2/{{artworkdata.image_id}}/full/843,/0/default.jpg" class="card-img-top w-100" alt="...">
+  <div class="card-body">
+    <div class="d-flex justify-content-between">
+      <h2 class="card-title">{{artworkdata.title | slice:0:20}}...</h2>
+      <a (click)="like(artworkdata)">
+        <i class="bi bi-heart-fill"
+          [class.text-danger]="isLiked || inWishlist(artworkdata)">
+        </i>
+      </a>
+    </div>
+    <div class="d-grid gap-2">
+      <a class="btn btn-secondary" type="button" routerLink="/VieDetailsArt/{{artworkdata.id}}">View Art</a>
+    </div>
+  </div>
+</div>
